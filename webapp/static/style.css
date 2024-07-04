@@ -10,6 +10,21 @@
     text-align: center;
     font-size: 500%;
 }
+.lolik img{
+    position: absolute;
+    left: 500%;
+}
+
+.image-container {
+    width: 5000px; /* change the width of the container */
+    height: 5000px;
+    border-radius: 20px;
+    align-items: center;
+    size: 500%;
+}
+.sss{
+    text-align: center;
+}
 
 .btn-sbm {
     background-color: var(--tg-theme-button-color);
@@ -19,4 +34,5 @@
     font-weight: 500;
     font-style: normal;
     border-radius: 20px;
+    text-align: center;
 }
