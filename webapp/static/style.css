@@ -15,12 +15,14 @@
     left: 500%;
 }
 
-.image-container {
-    width: 5000px; /* change the width of the container */
-    height: 5000px;
+.image-container{
+
     border-radius: 20px;
     align-items: center;
     size: 500%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover
 }
 .sss{
     text-align: center;

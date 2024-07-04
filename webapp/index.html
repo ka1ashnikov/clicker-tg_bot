@@ -25,12 +25,17 @@
         <script>
                 // Предполагается, что у вас есть HTML-элемент с идентификатором "image-container", где будут отображаться изображения
         const imageContainer = document.getElementById("image-container");
+
         imageContainer.style.display = "none";
+        
         let index = 1;
 
         function displayNextImage() {
             const image = new Image();
             image.src = `images/image${index}.png`;
+            image.style.width = '50%';
+            image.style.height = '50%';
+            image.objectFit = 'cover';
             
             imageContainer.innerHTML = ""; // Очистить предыдущее изображение
             imageContainer.appendChild(image); // Отобразить новое изображение
@@ -51,8 +56,9 @@
         function toggleDivs() {
     var divToHide = document.getElementById("lolik");
     var divToShow = document.getElementById("image-container");
-
+    
     divToHide.style.display = "none";
+
     divToShow.style.display = "block"; // или "flex", в зависимости от стилизации другого <div>
 }
     </script>
