@@ -1,3 +1,11 @@
-body {
-    background-color: gray;
+.body {
+    background-color: var(--tg-theme-bg-color);
+}
+
+.msg {
+    color:  var(--tg-theme-text-color);
+}
+
+.btn-sbm {
+    background-color:  var(--tg-theme-button-color);
 }

@@ -5,7 +5,7 @@ go_webapp = ReplyKeyboardMarkup(
     keyboard=
     [
             [
-                KeyboardButton(text='Go webapp', web_app= WebAppInfo(url='https://ka1ashnikov.github.io/clicker-webapp/'))
+                KeyboardButton(text='Go webapp', web_app= WebAppInfo(url='https://ka1ashnikov.github.io/clicker-tg_bot/webapp/'))
             ]
     ]
 , resize_keyboard=True) 
