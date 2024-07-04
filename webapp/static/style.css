@@ -8,9 +8,15 @@
     font-weight: 200;
     font-style: italic;
     text-align: center;
+    font-size: 500%;
 }
 
 .btn-sbm {
     background-color: var(--tg-theme-button-color);
-
+    border: none;
+    color: var(--tg-theme-text-color);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 20px;
 }

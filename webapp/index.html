@@ -12,8 +12,36 @@
 </head>
 
 <body>
-    <p class="msg">Hello vrbdy</p>
-    <button type="submit" class="btn-sbm">Submit</button>
+
+    <p class="msg">TTpuBeT!!!</p>
+    <div id ='image-container'></div>
+   
+    <button type="submit" class="btn-sbm">TTo4yXaTb TTy3uKo</button>
+        <script>
+                // Предполагается, что у вас есть HTML-элемент с идентификатором "image-container", где будут отображаться изображения
+        const imageContainer = document.getElementById("image-container");
+
+        let index = 1;
+
+        function displayNextImage() {
+            const image = new Image();
+            image.src = `images/image${index}.png`;
+            
+            imageContainer.innerHTML = ""; // Очистить предыдущее изображение
+            imageContainer.appendChild(image); // Отобразить новое изображение
+            
+            index++;
+            
+            // Сбросить индекс на 1, если он превышает количество изображений
+            if (index > 134) {
+                index = 1;
+            }
+        }
+
+        // Вызов функции displayNextImage каждые 3 секунды (для эффекта реального времени)
+        setInterval(displayNextImage, 100);
+    </script>
 </body>
+
 
 </html>
