@@ -19,7 +19,7 @@
         <div class = 'sss'><button type="submit" class="btn-sbm" onclick="toggleDivs()">TTo4yXaTb TTy3uKo</button></div>
     </div>
     
-    <div id ='image-container'></div>
+    <div id ='image-container'><p>Ето тибе</p></div>
    
    
         <script>
@@ -33,8 +33,8 @@
         function displayNextImage() {
             const image = new Image();
             image.src = `images/image${index}.png`;
-            image.style.width = '50%';
-            image.style.height = '50%';
+            image.style.width = '100%';
+            image.style.height = '100%';
             image.objectFit = 'cover';
             
             imageContainer.innerHTML = ""; // Очистить предыдущее изображение
