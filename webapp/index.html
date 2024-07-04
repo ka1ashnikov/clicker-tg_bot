@@ -12,15 +12,19 @@
 </head>
 
 <body>
-
-    <p class="msg">TTpuBeT!!!</p>
+    <div id = 'lolik'>
+        <p class="msg">TTpuBeT!!!</p>
+        <img src="images/kitty.jpg" id = 'kittyk'>
+        <button type="submit" class="btn-sbm" onclick="toggleDivs()">TTo4yXaTb TTy3uKo</button>
+    </div>
+    
     <div id ='image-container'></div>
    
-    <button type="submit" class="btn-sbm">TTo4yXaTb TTy3uKo</button>
+   
         <script>
                 // Предполагается, что у вас есть HTML-элемент с идентификатором "image-container", где будут отображаться изображения
         const imageContainer = document.getElementById("image-container");
-
+        imageContainer.style.display = "none";
         let index = 1;
 
         function displayNextImage() {
@@ -39,7 +43,17 @@
         }
 
         // Вызов функции displayNextImage каждые 3 секунды (для эффекта реального времени)
-        setInterval(displayNextImage, 3000);
+        setInterval(displayNextImage, 50);
+    </script>
+    <script>
+        // JavaScript
+        function toggleDivs() {
+    var divToHide = document.getElementById("lolik");
+    var divToShow = document.getElementById("image-container");
+
+    divToHide.style.display = "none";
+    divToShow.style.display = "block"; // или "flex", в зависимости от стилизации другого <div>
+}
     </script>
 </body>
 
